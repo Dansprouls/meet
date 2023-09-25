@@ -2,6 +2,12 @@
 
 import { useState } from "react";
 
+/*const testAllLocations = () => {
+  console.log(allLocations);
+};
+
+testAllLocations;*/
+
 const CitySearch = ({ allLocations }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [query, setQuery] = useState("");

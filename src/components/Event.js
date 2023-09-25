@@ -13,9 +13,9 @@ const Event = ({ event }) => {
       <div className="event">
         <h3 className="event-title">{event.summary}</h3>
         <div className="location">Location: {event.location}</div>
+        <div className="event-start">Event Start: {event.created}</div>
         {showDetails && (
           <div className="event-details">
-            <div className="event-start">Event Start: {event.created}</div>
             <div className="event-description">
               Description: {event.description}
             </div>
