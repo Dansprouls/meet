@@ -16,7 +16,7 @@ describe("<Event /> Component", () => {
     expect(title).toBeInTheDocument();
   });
 
-  test("start time included", () => {
+  test("location is included", () => {
     const location = EventComponent.queryByText(mockEvent.location);
     expect(location).toBeInTheDocument();
   });
