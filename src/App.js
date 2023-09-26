@@ -30,6 +30,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <h1>RoundUp - Meet App</h1>
       <NumberOfEvents
         setCurrentNOE={setCurrentNOE}
         setErrorAlert={setErrorAlert}
