@@ -3,11 +3,11 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
     const value = event.target.value;
 
     if (isNaN(value)) {
-      setErrorAlert("value is not a number");
+      setErrorAlert("Please select a number between 1 & 50");
     } else if (value > 50) {
-      setErrorAlert("max events shown is 50");
+      setErrorAlert("Maximum number of events is 50");
     } else if (value <= 0) {
-      setErrorAlert("min events shown is 1");
+      setErrorAlert("Minimum number of events is 1");
     } else {
       setErrorAlert("");
       setCurrentNOE(value);
