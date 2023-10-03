@@ -31,7 +31,7 @@ const App = () => {
     if (navigator.onLine) {
       setWarningAlert("");
     } else {
-      setWarningAlert("You are currently offline");
+      setWarningAlert("You are currently offline and using cached data");
     }
     fetchData();
   }, [currentCity, currentNOE]);
